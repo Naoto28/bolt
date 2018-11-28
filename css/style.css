@@ -29,6 +29,7 @@ nav {
   background-color: #74cfae;
   color: white;
   float: right;
+  font-family: Lato;
 }
 
 .nav__btn:hover {
@@ -46,6 +47,7 @@ nav {
 .main__title_box {
   padding: 250px 0;
   margin: 0 auto;
+  font-family: Lato;
 }
 
 .main__title {
@@ -82,10 +84,12 @@ nav {
 .description__title {
   font-size: 24px;
   margin-bottom: 35px;
+  font-family: Raleway;
 }
 
 .description__text {
   font-size: 20px;
+  font-family: Lato;
 }
 
 /*section_2 事業説明*/
@@ -99,6 +103,7 @@ nav {
   font-size: 24px;
   padding: 60px 0 40px 0;
   text-align: center;
+  font-family: Raleway;
 }
 
 .works__pictures {
@@ -137,6 +142,7 @@ nav {
   float: left;
   word-break: break-word;
   width: 70%;
+  font-family: Lato;
 }
 
 .works__btn {
@@ -146,6 +152,7 @@ nav {
   margin-left: 90px;
   color: white;
   float: right;
+  font-family: Lato;
 }
 
 .works__btn:hover {
@@ -165,6 +172,7 @@ nav {
   padding: 70px 0 40px 0;
   text-align: center;
   font-size: 24px;
+  font-family: Raleway;
 }
 
 .skils__box {
@@ -189,6 +197,7 @@ nav {
   color: white;
   margin-top: 10px;
   font-size: 16px;
+  font-family: Lato;
 }
 
 
@@ -234,6 +243,7 @@ nav {
   color: white;
   text-align: right;
   padding: 20px 0 25px 0;
+  font-family: Lato;
 }
 
 
