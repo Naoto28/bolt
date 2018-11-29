@@ -4,6 +4,10 @@
   clear: both;
 }
 
+#bolt__body {
+  font-family: Lato;
+}
+
 .content__width {
   max-width: 1100px;
   margin: 0 auto;
@@ -22,20 +26,21 @@
   z-index: 1;
 }
 
-.nav__icon {
+.header__bar {
   padding: 15px 0;
+}
+
+.nav__icon {
   font-size: 40px;
   color: #808080;
 }
 
 .nav__btn {
-  margin: 15px 0;
   font-size: 12px;
   padding: 14px 12px;
   background-color: #74cfae;
   color: #fff;
   float: right;
-  font-family: Lato;
   transition: .3s;
   text-decoration: none;
 }
@@ -53,7 +58,6 @@
 
 .main__title_box {
   padding: 250px 0 250px 0;
-  font-family: Lato;
 }
 
 .main__title {
@@ -61,6 +65,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   color: #74cfae;
+  font-family: Raleway;
 }
 
 .sub__title {
@@ -80,13 +85,14 @@
   text-align: center;
 }
 
-.description__word_box {
-  overflow: auto;
-}
-
 .description__picuture {
   float: left;
-  padding-right: 185px;
+  margin-right: 185px;
+}
+
+.description__word_box {
+  width: 700px;
+  float: right;
 }
 
 .description__title {
@@ -97,7 +103,6 @@
 
 .description__text {
   font-size: 20px;
-  font-family: Lato;
 }
 
 /*section_2 事業説明*/
@@ -134,7 +139,7 @@
   transition: .3s;
 }
 
-.works__picuture:hover {
+.works__picuture_link:hover {
   opacity: 1;
 }
 
@@ -155,7 +160,6 @@
   text-align: center;
   float: left;
   width: 500px;
-  font-family: Lato;
 }
 
 .works__btn {
@@ -165,7 +169,6 @@
   margin-left: 90px;
   color: #fff;
   float: right;
-  font-family: Lato;
   transition: .3s;
   text-decoration: none;
 }
@@ -211,7 +214,6 @@
   color: #fff;
   margin-top: 10px;
   font-size: 16px;
-  font-family: Lato;
 }
 
 .skils__pictures {
@@ -254,11 +256,13 @@
   background-color: #74cfae;
 }
 
+.footer__inner {
+  padding: 20px 0 25px 0;
+}
+
 .footer__text {
   color: #fff;
   text-align: right;
-  padding: 20px 0 25px 0;
-  font-family: Lato;
 }
 
 
@@ -266,8 +270,543 @@
 
 
 
+/*レスポンシブ タブレット*/
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+
+  .content__width {
+    max-width: 98%;
+    margin: 0 auto;
+  }
+
+  .bolt__main {
+    padding-top: 70px;
+  }
+
+  /*ヘッダー*/
+
+  .header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .nav__icon {
+    padding: 15px 0;
+    font-size: 40px;
+    color: #808080;
+  }
+
+  .nav__btn {
+    margin: 15px 0;
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    color: #fff;
+    float: right;
+    font-family: Lato;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  .nav__btn:hover {
+    color: #333;
+  }
+
+  /*メイン*/
+
+  .main__content {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .main__title_box {
+    padding: 250px 0 250px 0;
+    font-family: Lato;
+  }
+
+  .main__title {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #74cfae;
+  }
+
+  .sub__title {
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+
+  /*section_1 サイト説明*/
+
+  .description__section {
+    background-color: #74cfae;
+    color: #fff;
+  }
+
+  .description__main {
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .description__word_box {
+    width: 100%;
+  }
+
+  .description__picuture {
+    float: none;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .description__title {
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-family: Raleway;
+  }
+
+  .description__text {
+    font-size: 20px;
+    font-family: Lato;
+  }
+
+  /*section_2 事業説明*/
+
+
+  .works__section {
+    background-color: #f2f2f2;
+  }
+
+  .works__inner {
+    padding: 60px 0 70px 0;
+  }
+
+  .works__title {
+    font-size: 24px;
+    text-align: center;
+    font-family: Raleway;
+    margin-bottom: 40px;
+  }
+
+  .works__pictures {
+    font-size: 0;
+    margin-bottom: 80px;
+  }
+
+  .works__picuture_link {
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .works__picuture {
+    opacity: .7;
+    transition: .3s;
+  }
+
+  .works__picuture:hover {
+    opacity: 1;
+  }
+
+  .works__picuture_link:nth-child(3n) {
+    padding-bottom: 80px;
+  }
+
+  .works__picuture_link:last-child {
+    padding-bottom: 0;
+  }
+
+  .works__sub_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .works__sub_text {
+    text-align: center;
+    width: 100%;
+    font-family: Lato;
+    margin-bottom: 40px;
+  }
+
+  .works__btn {
+    font-size: 12px;
+    padding: 14px 20px;
+    background-color: #74cfae;
+    margin-left: 0;
+    color: #fff;
+    float: none;
+    font-family: Lato;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  .works__btn:hover {
+    color: #333;
+  }
+
+  /*section_3 スキル説明*/
+
+
+  .skils__section {
+    background-color: #4e4e4e;
+  }
+
+  .skils__inner {
+    padding: 70px 0 100px 0;
+  }
+
+  .skils__title {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Raleway;
+  }
+
+  .skils__box {
+    margin-right: 0;
+    display: block;
+  }
+
+  .skils__box:last-child {
+    margin: 0;
+  }
+
+  .skils__content {
+    text-align: center;
+  }
+
+  .skils__picuture_title {
+    color: #fff;
+    margin: 10px 0 88px 0;
+    font-size: 16px;
+    font-family: Lato;
+  }
+
+  .skils__pictures {
+    text-align: center;
+  }
+
+  /*section_4 SNSアイコン*/
+
+  .sns__section {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .sns__content {
+    padding: 200px 0;
+    font-size: 0;
+  }
+
+  .sns__items {
+    width: 185px;
+    display: inline-block;
+    text-align: center;
+    transition: .3s;
+    padding: 30px 0;
+  }
+
+  .sns__items:hover {
+    background-color: #fff;
+  }
+
+  .sns__icons {
+    color: #74cfae;
+    font-size: 60px;
+  }
+
+
+  /*フッター*/
+
+  .footer {
+    background-color: #74cfae;
+  }
+
+  .footer__text {
+    color: #fff;
+    text-align: right;
+    padding: 20px 0 25px 0;
+    font-family: Lato;
+  }
+
+}
 
 
 
+
+
+
+/*レスポンシブ スマホ*/
+
+@media screen and (max-width: 766px) {
+
+  .content__width {
+    max-width: 98%;
+    margin: 0 auto;
+  }
+
+  .bolt__main {
+    padding-top: 70px;
+  }
+
+  /*ヘッダー*/
+
+  .header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .nav__icon {
+    padding: 15px 0;
+    font-size: 40px;
+    color: #808080;
+  }
+
+  .nav__btn {
+    margin: 15px 0;
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    color: #fff;
+    float: right;
+    font-family: Lato;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  .nav__btn:hover {
+    color: #333;
+  }
+
+  /*メイン*/
+
+  .main__content {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .main__title_box {
+    padding: 160px 0 130px 0;
+    font-family: Lato;
+  }
+
+  .main__title {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #74cfae;
+  }
+
+  .sub__title {
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+
+  /*section_1 サイト説明*/
+
+  .description__section {
+    background-color: #74cfae;
+    color: #fff;
+  }
+
+  .description__main {
+    padding: 50px 0 25px 0;
+    text-align: center;
+  }
+
+  .description__word_box {
+    width: 100%;
+  }
+
+  .description__picuture {
+    float: none;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .description__title {
+    font-size: 24px;
+    margin-bottom: 35px;
+    font-family: Raleway;
+  }
+
+  .description__text {
+    font-size: 20px;
+    font-family: Lato;
+  }
+
+  /*section_2 事業説明*/
+
+
+  .works__section {
+    background-color: #f2f2f2;
+  }
+
+  .works__inner {
+    padding: 60px 0 70px 0;
+  }
+
+  .works__title {
+    font-size: 24px;
+    text-align: center;
+    font-family: Raleway;
+    margin-bottom: 40px;
+  }
+
+  .works__pictures {
+    font-size: 0;
+    margin-bottom: 80px;
+  }
+
+  .works__picuture_link {
+    margin-right: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .works__picuture {
+    opacity: .7;
+    transition: .3s;
+    height: 350px;
+    width: 350px;
+  }
+
+  .works__picuture:hover {
+    opacity: 1;
+  }
+
+  .works__picuture_link:nth-child(3n) {
+    padding-bottom: 80px;
+  }
+
+  .works__picuture_link:last-child {
+    padding-bottom: 0;
+  }
+
+  .works__sub_content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .works__sub_text {
+    text-align: center;
+    width: 100%;
+    font-family: Lato;
+    margin-bottom: 40px;
+  }
+
+  .works__btn {
+    font-size: 12px;
+    padding: 14px 20px;
+    background-color: #74cfae;
+    margin-left: 0;
+    color: #fff;
+    float: none;
+    font-family: Lato;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+  .works__btn:hover {
+    color: #333;
+  }
+
+  /*section_3 スキル説明*/
+
+
+  .skils__section {
+    background-color: #4e4e4e;
+  }
+
+  .skils__inner {
+    padding: 70px 0 100px 0;
+  }
+
+  .skils__title {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Raleway;
+  }
+
+  .skils__box {
+    margin-right: 0;
+    display: block;
+  }
+
+  .skils__box:last-child {
+    margin: 0;
+  }
+
+  .skils__content {
+    text-align: center;
+  }
+
+  .skils__picuture_title {
+    color: #fff;
+    margin: 10px 0 88px 0;
+    font-size: 16px;
+    font-family: Lato;
+  }
+
+  .skils__pictures {
+    text-align: center;
+  }
+
+  /*section_4 SNSアイコン*/
+
+  .sns__section {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+
+  .sns__content {
+    padding: 50px 15px;
+    font-size: 0;
+  }
+
+  .sns__items {
+    width: 185px;
+    display: block;
+    margin: 0 auto;
+    transition: .3s;
+    padding: 30px 0;
+  }
+
+  .sns__items:hover {
+    background-color: #fff;
+  }
+
+  .sns__icons {
+    color: #74cfae;
+    font-size: 60px;
+  }
+
+
+  /*フッター*/
+
+  .footer {
+    background-color: #74cfae;
+  }
+
+  .footer__text {
+    color: #fff;
+    text-align: right;
+    padding: 20px 0 25px 0;
+    font-family: Lato;
+  }
+
+}
+
+
+
+}
 
 
