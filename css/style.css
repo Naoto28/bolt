@@ -272,7 +272,7 @@
 @media screen and (min-width: 767px) and (max-width: 1199px) {
 
   .content__width {
-    max-width: 98%;
+    width: 97%;
     margin: 0 auto;
   }
 
@@ -318,18 +318,19 @@
   }
 
   .works__picuture_link {
-    margin-right: 0;
     margin-bottom: 0;
-    display: flex;
-    justify-content: center;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .works__picuture_link:nth-child(3n) {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+    margin-right: auto;
   }
 
   .works__picuture_link:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .works__sub_content {
@@ -353,13 +354,14 @@
 
   .skils__box {
     margin-right: 0;
+    margin-bottom: 88px;
     display: block;
   }
 
 
   .skils__picuture_title {
   color: #fff;
-  margin: 10px 0 88px 0;
+  margin-top: 10px;
   font-size: 16px;
   }
 
@@ -371,7 +373,7 @@
 @media screen and (max-width: 766px) {
 
   .content__width {
-    max-width: 98%;
+    width: 97%;
     margin: 0 auto;
   }
 
@@ -457,23 +459,23 @@
   .works__picuture_link {
     margin-right: 0;
     margin-bottom: 0;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
   }
 
   .works__picuture {
     opacity: .7;
     transition: .3s;
-    height: 350px;
-    width: 350px;
   }
 
   .works__picuture_link:nth-child(3n) {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
+    margin-right: auto;
   }
 
   .works__picuture_link:last-child {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .works__sub_content {
@@ -497,17 +499,18 @@
 
   .skils__box {
     margin-right: 0;
+    margin-bottom: 88px;
     display: block;
   }
 
   .skils__picuture_title {
-    margin: 10px 0 88px 0;
+    margin-top: 10px;
   }
 
   /*section_4 SNSアイコン*/
 
   .sns__content {
-    padding: 50px 15px;
+    padding: 50px 0px;
     font-size: 0;
   }
 
